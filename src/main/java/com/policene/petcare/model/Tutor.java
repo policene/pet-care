@@ -25,7 +25,7 @@ public class Tutor {
     @Column(name = "name", nullable = false, length = 100)
     private String name;
 
-    @Column(name = "cpf", nullable = false, length = 11)
+    @Column(name = "cpf", nullable = false, length = 11, unique = true)
     private String cpf;
 
     @Column(name = "phone", nullable = false, length = 11)

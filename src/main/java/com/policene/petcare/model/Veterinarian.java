@@ -26,7 +26,7 @@ public class Veterinarian {
     @Column(name = "name", nullable = false, length = 100)
     private String name;
 
-    @Column(name = "crmv", nullable = false)
+    @Column(name = "crmv", nullable = false, unique = true)
     private String crmv;
 
     @Enumerated(EnumType.STRING)
